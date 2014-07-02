@@ -1,0 +1,13 @@
+<h1>Gif #<%= @gif.id %></h1>
+
+<div>
+  <strong>Url</strong>:<br />
+  <p><%= @gif.url %></p>
+</div>
+<div>
+  <strong>Caption</strong>:<br />
+  <p><%= @gif.caption %></p>
+</div>
+
+<a href="/gifs/<%= @gif.id %>/edit">Edit</a> |
+<a href="/gifs/<%= @gif.id %>/destroy">Destroy</a>

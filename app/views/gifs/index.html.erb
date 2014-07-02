@@ -1,0 +1,29 @@
+<h1>Gifs</h1>
+
+<p><a href="/new_gif">Add a New Gif</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Caption</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @gifs.each do |gif| %>
+    <tr>
+          <td><%= gif.url %></td>
+          <td><%= gif.caption %></td>
+          <td><a href="/gifs/<%= gif.id %>">Show</a>
+        </td>
+      <td><a href="/gifs/<%= gif.id %>/edit">Edit</a></td>
+      <td><a href="/gifs/<%= gif.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

@@ -1,0 +1,17 @@
+<h1>Editing Gif #<%= @gif.id %></h1>
+
+<form action="/gifs/<%= @gif.id %>/update">
+  <div>
+    <label for="url">url</label><br />
+    <input id="url" name="url" value="<%= @gif.url  %>" type="text" />
+  </div>
+  <div>
+    <label for="caption">caption</label><br />
+    <input id="caption" name="caption" value="<%= @gif.caption  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+
