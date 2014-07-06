@@ -1,14 +1,14 @@
-<h1>Editing User #<%= @user.id %></h1>
+<h1>Editing User #<%= @user_id.id %></h1>
 
-<form action="/users/<%= @user.id %>/update">
+<form action="/users/<%= @user_id.id %>/update">
   <div>
     <label for="name">name</label><br />
     <input id="name" name="name" value="<%= @user.name  %>" type="text" />
-    <input type="text" name="user" placeholder="enter user name" value= "<%= @gif.user%>">
+    <input type="text" name="user_id" placeholder="enter user_id name" value= "<%= @gif.user%>">
   </div>
   <div>
     <label for="email">email</label><br />
-    <input id="email" name="email" value="<%= @user.email  %>" type="text" />
+    <input id="email" name="email" value="<%= @user_id.email  %>" type="text" />
   </div>
   <div>
     <input type="submit">

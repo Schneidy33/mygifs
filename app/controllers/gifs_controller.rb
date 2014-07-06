@@ -15,6 +15,7 @@ class GifsController < ApplicationController
     @gif = Gif.new
     @gif.url = params[:url]
     @gif.caption = params[:caption]
+    @gif.user= params['user_id']
 
     if @gif.save
       redirect_to "/gifs/#{ @gif.id }"
